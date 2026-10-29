@@ -9,6 +9,7 @@ none. Four tile styles: Roman stone, Delft blue, glass and gold, and broken cera
 sideways (or drag across the screen, or tap a chip) and the new style pops in tile by tile. The
 picture fills the whole screen.
 
+- Thumbnail: `public/images/live-mosaic-thumbnail.jpg` (the share image).
 - The mosaic, its layout along the picture's contours and the trail: `src/mosaic/Mosaic.tsx`,
   `pipeline.ts`, `shaders.ts`; tuning in `config.ts`, the styles in `styles.ts`.
 - The person (for the trail and the smaller face tiles) is the portrait mask, steadied and trusted
