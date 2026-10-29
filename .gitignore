@@ -9,3 +9,5 @@ opencode.json
 .env.*.local
 *.log
 .dev/
+dev-media/*.mp4
+dev-media/*.mov

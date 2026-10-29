@@ -1,3 +1,27 @@
+# Live Mosaic
+
+Your camera picture rebuilt live as a hand-laid mosaic. Thousands of small tiles run in rows along
+every contour of the picture, around your face, your hands and the room, with thin grout between
+them; each tile takes its stone from the picture under it, so as you move the colours ripple through
+tiles that stay put. Tiles are a little smaller on your face so it stays readable. When you move,
+your tiles leave a soft swaying trail that fades back into the mosaic; standing still, there is
+none. Four tile styles: Roman stone, Delft blue, glass and gold, and broken ceramic. Swipe a hand
+sideways (or drag across the screen, or tap a chip) and the new style pops in tile by tile. The
+picture fills the whole screen.
+
+- The mosaic, its layout along the picture's contours and the trail: `src/mosaic/Mosaic.tsx`,
+  `pipeline.ts`, `shaders.ts`; tuning in `config.ts`, the styles in `styles.ts`.
+- The person (for the trail and the smaller face tiles) is the portrait mask, steadied and trusted
+  only around the tracked face, body and hands (`src/mosaic/sim/gate.ts`).
+- Changing style: `HandSwipe.tsx` (air swipe), `TouchSwipe.tsx` (drag), `Chips.tsx` (glass chips);
+  the hint is a ghost hand sweeping sideways (`Hint.tsx`).
+- `src/App.tsx` uses a full-window container instead of the 9:16 frame; re-apply after a template
+  upgrade.
+- Dev preview without a camera: the media switcher starts on the SDK's sample video. Dev keys: 1–4
+  pick a style, `[` / `]` change the tile size, `d` cycles debug views.
+
+---
+
 # v2-template
 
 The Vincentt starter app: a real React + R3F + Vincentt XR SDK (`@vincentt-xr/sdk`)

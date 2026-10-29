@@ -1,9 +1,10 @@
 {
-  "title": "XR App - Vincentt",
-  "description": "An AR experience built with Vincentt",
+  "title": "Live Mosaic",
+  "description": "Your camera rebuilt live as a hand-laid tile mosaic; swipe to change the stones",
   "image": "/images/og-default.jpg",
-  "imageAlt": "Vincentt — Augmented Reality App builder",
+  "imageAlt": "Live Mosaic — a camera experience built with Vincentt",
   "imageWidth": 1200,
   "imageHeight": 630,
-  "imageType": "image/jpeg"
+  "imageType": "image/jpeg",
+  "url": "https://live-mosaic.vincentt.app"
 }
